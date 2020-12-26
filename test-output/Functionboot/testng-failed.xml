@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Functionboot]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="URI" value="https://www.HomeDepot.com"/>
+  <test thread-count="5" name="first(failed)">
+    <classes>
+      <class name="homeDepotboot.NewTestbootrun">
+        <methods>
+          <include name="fhome"/>
+          <include name="Driver"/>
+        </methods>
+      </class> <!-- homeDepotboot.NewTestbootrun -->
+    </classes>
+  </test> <!-- first(failed) -->
+  <test thread-count="5" name="second(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="URI" value="https://www.HomeDepot.com"/>
+    <classes>
+      <class name="homeDepotboot.NewTestbootrun">
+        <methods>
+          <include name="fhome"/>
+          <include name="Driver"/>
+        </methods>
+      </class> <!-- homeDepotboot.NewTestbootrun -->
+    </classes>
+  </test> <!-- second(failed) -->
+</suite> <!-- Failed suite [Functionboot] -->
